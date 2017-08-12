@@ -1,0 +1,43 @@
+/************** CUSTOM STYLES **************/
+
+  body {
+    background: #dcdcdc; /* Background color */
+  }
+
+
+.column {
+  border: 1px solid #cbcbcb;
+  margin: 0; /* You can add margins, but if they're too big it will mess up the grid */
+  padding: 10px; /* Adds padding inside divs */
+  text-align: center; /* Centers text within divs */
+  background: white;
+  box-sizing: border-box;
+}
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+}
+
+p {
+
+}
+
+/* Lists */
+ul {
+
+}
+
+li {
+
+}
+
+/* Links */
+a{
+ text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+/* Hover effects */
+a:hover {
+  color: skyblue;
+}

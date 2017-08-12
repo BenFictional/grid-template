@@ -1,0 +1,43 @@
+/***************************
+GRID STRUCTURE
+-------------
+Don't edit unless you want
+to destroy the grid system.
+****************************/
+
+.column {
+  flex-basis: 100%;
+  /*box-sizing: border-box;*/
+}
+
+
+/* When the browser is larger than 600px wide */
+  @media (min-width: 600px) {
+    .row {
+      display: flex; /* Creates rows */
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .column {
+      flex: 1; /* Causes divs to expand to fill row */
+    }
+
+    /* Percentages for specific columns */
+    .one-quarter {flex: 25%;}
+    .one-quarter {flex: 75%;}
+    .one-third {flex: 33.33.%;}
+    .one-half{flex: 50%;}
+    .two-thirds{flex: 66.66%;}
+
+  }
+
+
+
+
+
+
+
+
+
+.
