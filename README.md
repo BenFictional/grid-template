@@ -4,7 +4,7 @@ Grid template for Landing Page assignment
 ## How to download files
 1. Click the green "Clone or Download" button.
 2. Choose "Download Zip"
-3. Unzip the file on your computer by double-clicking.
+3. Unzip the file on your computer by double-clicking (OSX), or right-clicking and selecting "Extract all" (Windows).
 4. Copy the contents of the "landing-page" folder to your local-directory folder.
 
 ## File Structure
