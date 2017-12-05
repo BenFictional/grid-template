@@ -17,5 +17,5 @@ CSS properties can be included in the <head> section of a single html page, but 
 Open the HTML file in a web browser and in Brackets, to examine the structure of the website and how it is defined in the code.
 
 * There are extensive comments to help you find your way around (comments will appear grey in Brackets)
-
-* The layout uses modern HTML5 declarations like <header> and a responsive Flexbox layout in an effort to teach current standards.
+* The grid layout uses the modern CSS property `display: flex` to arrange columns within rows. Read more about it [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) if you're curious.
+* When the browser is resized to below 600px wide, all the columns will occupy the full width of the screen. This is a pretty common technique for displaying content on mobile devices. 
