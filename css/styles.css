@@ -1,43 +1,38 @@
 /************** CUSTOM STYLES **************/
 
-  body {
+body {
+    margin: 0;
+    padding: 0;
     background: #dcdcdc; /* Background color */
-  }
-
+}
 
 .column {
-  border: 1px solid #cbcbcb;
-  margin: 0; /* You can add margins, but if they're too big it will mess up the grid */
-  padding: 10px; /* Adds padding inside divs */
-  text-align: center; /* Centers text within divs */
+  border: 1px solid #cbcbcb; /* Delete this to remove borders from columns, or change the values if you want. */
+  margin: 0; /* You can add margins between columns, but if they're too big it will mess up the grid. */
+  padding: 10px; /* Adds padding inside columns. */
   background: white;
-  box-sizing: border-box;
+  text-align: center; /* Centers text within a column horizontally. */
 }
 
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  color: lightseagreen;
 }
 
 p {
-
+  font-family: sans-serif;
 }
 
-/* Lists */
-ul {
-
-}
-
-li {
-
-}
 
 /* Links */
-a{
+a {
+ font-family: sans-serif;
  text-decoration: none; /* Removes underline from hyperlinks */
 }
 
 /* Hover effects */
 a:hover {
-  color: skyblue;
+  color: dodgerblue;
 }
