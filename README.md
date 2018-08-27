@@ -24,8 +24,11 @@ The layout uses [CSS Grid](https://www.w3schools.com/css/css_grid.asp) to create
 Any content within the `container` div can be placed onto the 12 column grid by specifying the CSS property [grid-column](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column):
 
 `grid-column: span 12` Full width of container
+
 `grid-column: span 6` Half width of container
+
 `grid-column: span 3` One quarter width of container, or 3 columns of 12.
+
 `grid-column: 2 / 4` Section begins at grid track 2 and ends and grid track 4. Tracks are the vertical lines that define columns. 
 
 When the browser is resized to below 600px wide, all the columns will occupy the full width of the screen. This is a common technique for displaying content on mobile devices. 
