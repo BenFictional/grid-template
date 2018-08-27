@@ -1,38 +1,86 @@
-/************** CUSTOM STYLES **************/
+/*****************************
+Basic styles
+******************************/
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Adds a 20px gap around the edge of the screen */
     background: #dcdcdc; /* Background color */
+    font-family: sans-serif; /* Sets font family for entire page, unless you declare something else below */
 }
-
-.column {
-  border: 1px solid #cbcbcb; /* Delete this to remove borders from columns, or change the values if you want. */
-  margin: 0; /* You can add margins between columns, but if they're too big it will mess up the grid. */
-  padding: 10px; /* Adds padding inside columns. */
-  background: white;
-  text-align: center; /* Centers text within a column horizontally. */
-}
-
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  color: lightseagreen;
-}
-
-p {
-  font-family: sans-serif;
+  color: lightseagreen; /* Color for all headers */
 }
 
 
 /* Links */
 a {
- font-family: sans-serif;
- text-decoration: none; /* Removes underline from hyperlinks */
+  color: dodgerblue;
+  text-decoration: none; /* Removes underline from hyperlinks */
 }
 
 /* Hover effects */
-a:hover {
-  color: dodgerblue;
+a:hover { color: royalblue; }
+
+
+/*****************************
+Grid Container
+******************************/
+.container {
+  display: grid;  /* Don't delete this line */
+  grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
+  grid-gap: 5px; /* Sets gap between sections */
 }
+
+/*****************************
+All Sections
+******************************/
+.section {
+  /* Visual styles for the sections */
+  padding: 10px;
+  background: white;
+}
+
+/*****************************
+Individual Sections - Change the class names if you want, and delete anything you don't need.
+******************************/
+.one {
+  grid-column: span 12; /* Spans full width of 12 column container */
+
+}
+
+.two {
+  grid-column: span 4;
+  height: 200px;
+}
+.three {
+  grid-column: span 4;
+  height: 100px;
+}
+
+.four {
+  grid-column: span 4;
+  background: #dcdcdc; /* Matches the background color of the body */
+  border: 1px solid #ababab;
+}
+
+/* With 12 columns, there are 13 vertical lines defining them;
+this tells the element to go from 2 to 7 */
+.five {
+  grid-column:  2 / 7;
+  text-align: center; /* Centers the text */
+}
+
+
+
+/*****************************
+ FOR MOBILE DEVICES:
+ When the browser is smaller than 600px wide,
+ all sections become 12 units wide (full width) 
+ ******************************/
+  @media (max-width: 600px) {
+    .section { grid-column: span 12; }
+
+  }
